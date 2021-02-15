@@ -3,13 +3,13 @@ import { Request, Response, Router } from 'express'
 class IndexRoutes {
 	router: Router
 
-	constructor(){
+	constructor() {
 		this.router = Router()
 		this.routes()
 	}
 
-	routes(){
-		this.router.get('/', (req: Request,res: Response) => res.send('Routes'))
+	routes() {
+		this.router.get('/', (req: Request, res: Response) => res.send('Routes'))
 	}
 }
 
