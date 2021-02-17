@@ -1,0 +1,33 @@
+@host = http://localhost:4444/api/users
+
+###
+GET {{host}}
+
+###
+GET {{host}}/ryan12345
+
+###
+POST {{host}}
+Content-Type: application/json
+
+{
+	"name":"Ryan Ray",
+	"email":"ryan@gmail.com",
+	"password":"123",
+	"username":"ryan123"
+}
+
+###
+PUT {{host}}/ryan123
+Content-Type: application/json
+
+{
+	"name":"Ryan Reinolds",
+	"email":"ryan@gmail.com",
+	"password":"12345",
+	"username":"ryan12345"
+}
+
+
+###
+DELETE {{host}}/my-second-post
