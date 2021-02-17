@@ -1,0 +1,12 @@
+@host = http://localhost:4444/api/posts
+
+###
+GET {{host}}
+
+###
+POST {{host}}
+Content-Type: application/json
+
+{
+	"tests":"test"
+}
