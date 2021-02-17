@@ -4,9 +4,26 @@
 GET {{host}}
 
 ###
+GET {{host}}/my-second-post
+
+###
 POST {{host}}
 Content-Type: application/json
 
 {
-	"tests":"test"
+	"title":"My second post",
+	"url":"my-second-post",
+	"content":"this is my second post",
+	"image":"https://images.pexels.com/photos/5357984/pexels-photo-5357984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 }
+
+###
+PUT {{host}}/my-first-post
+Content-Type: application/json
+
+{
+	"title":"Este es mi primer post"
+}
+
+###
+DELETE {{host}}/my-second-post
